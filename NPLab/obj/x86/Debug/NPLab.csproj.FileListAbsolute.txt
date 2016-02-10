@@ -1,0 +1,7 @@
+E:\project\NPLab\NPLab\NPLab\bin\Debug\NPLab.exe
+E:\project\NPLab\NPLab\NPLab\bin\Debug\NPLab.pdb
+E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.Form1.resources
+E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.Properties.Resources.resources
+E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.csproj.GenerateResource.Cache
+E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.exe
+E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.pdb

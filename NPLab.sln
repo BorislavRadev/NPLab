@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPLab", "NPLab\NPLab.csproj", "{998508B8-46D7-41D3-8187-4687CA5CA21F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPLab.Models", "..\..\10a Radev\NPLab\NPLabDB\NPLab\NPLab.Models\NPLab.Models.csproj", "{208C503E-289F-4F1E-A438-A9FB2EA9C7B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPLab.Models", "NPLabDB\NPLab.Models.csproj", "{208C503E-289F-4F1E-A438-A9FB2EA9C7B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
