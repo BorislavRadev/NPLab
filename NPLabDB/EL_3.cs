@@ -15,6 +15,10 @@ namespace NPLab.Models
 
         public int Id { get; set; }
 
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
         public DateTime Date { get; set; }
 
         public double Max { get; set; }
@@ -24,5 +28,9 @@ namespace NPLab.Models
             get { return this.groundings; }
             set { this.groundings = value; }
         }
+
+        public int ObjectsId { get; set; }
+
+        public virtual Objects Object { get; set; }
     }
 }

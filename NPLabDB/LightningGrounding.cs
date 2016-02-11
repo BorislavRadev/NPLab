@@ -1,7 +1,7 @@
 ﻿
 namespace NPLab.Models
 {
-    class LightningGrounding
+    public class LightningGrounding
     {
         public int Id { get; set; }
 

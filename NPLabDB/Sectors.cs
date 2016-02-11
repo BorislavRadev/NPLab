@@ -22,8 +22,8 @@ namespace NPLab.Models
             set { this.floors = value; }
         }
 
-        public int ObjectId { get; set; }
+        public int El_2Id { get; set; }
 
-        public virtual Object Object { get; set; }
+        public virtual El_2 Object { get; set; }
     }
 }

@@ -13,7 +13,11 @@ namespace NPLab.Models
         }
 
         public int Id { get; set; }
-        
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
         public DateTime Date { get; set; }
 
         public double DTHighest { get; set; }
@@ -33,5 +37,9 @@ namespace NPLab.Models
             get { return this.SectorsOfEl4; }
             set { this.SectorsOfEl4 = value; }
         }
+
+        public int ObjectsId { get; set; }
+
+        public virtual Objects Object { get; set; }
     }
 }

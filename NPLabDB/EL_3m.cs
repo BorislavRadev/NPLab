@@ -9,11 +9,14 @@ namespace NPLab.Models
 
         public EL_3m()
         {
-            //this.Max = ??
             this.LightningGroundings = new HashSet<LightningGrounding>();
         }
 
         public int Id { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
 
         public DateTime Date { get; set; }
 
@@ -24,5 +27,9 @@ namespace NPLab.Models
             get { return this.LightningGroundings; }
             set { this.LightningGroundings = value; }
         }
+
+        public int ObjectsId { get; set; }
+
+        public virtual Objects Object { get; set; }
     }
 }

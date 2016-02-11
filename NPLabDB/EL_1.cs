@@ -14,6 +14,10 @@ namespace NPLab.Models
         }
         public int Id { get; set; }
 
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
         public DateTime Date { get; set; }
 
         public int SourceVoltage { get; set; }
@@ -25,5 +29,9 @@ namespace NPLab.Models
             get { return this.cabels; }
             set { this.cabels = value; }
         }
+
+        public int ObjectsId { get; set; }
+
+        public virtual Objects Object { get; set; }
     }
 }

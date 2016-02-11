@@ -1,7 +1,7 @@
 ﻿
 namespace NPLab.Models
 {
-    class Grounding
+    public class Grounding
     {
         public int Id { get; set; }
 

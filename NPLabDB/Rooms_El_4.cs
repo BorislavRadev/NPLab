@@ -14,7 +14,7 @@ namespace NPLab.Models
 
         public int Id { get; set; }
 
-        public string? RoomName { get; set; }
+        public string RoomName { get; set; }
 
         public ICollection<Installation_El_4> ListOfInstallation_El_4
         {
