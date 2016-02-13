@@ -4,13 +4,15 @@ namespace TestNPLabDB
     using NPLab.Data;
     using NPLab.Models;
     using System;
+    using System.Data.Entity;
     using System.Linq;
+    using NPLab.Data.Migrations;
 
     public class StartUp
     {
         public static void Main()
         {
-            DateTime localDate = DateTime.Now;
+            Database.SetInitializer( new MigrateDatabaseToLatestVersion<NPLabDbContext,Configuration>()); 
 
             var db = new NPLabDbContext();
 
@@ -18,7 +20,7 @@ namespace TestNPLabDB
             {
                 FirstName = "Malin",
                 LastName = "Zhelev",
-                Time = localDate
+                Time = DateTime.Now
             };
 
             db.Engineers.Add(engineer);

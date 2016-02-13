@@ -22,6 +22,10 @@ namespace NPLab.Models
 
         public int Id { get; set; }
 
+        public string ClientFistName { get; set; }
+
+        public string ClientLastName { get; set; }
+
         public virtual ICollection<EL_1> El_1
         {
             get { return this.el_1; }
