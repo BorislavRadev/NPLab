@@ -12,3 +12,17 @@ E:\project\NPLab\NPLab\TestNPLabDB\bin\Debug\EntityFramework.SqlServer.xml
 E:\project\NPLab\NPLab\TestNPLabDB\obj\x86\Debug\TestNPLabDB.csprojResolveAssemblyReference.cache
 E:\project\NPLab\NPLab\TestNPLabDB\obj\x86\Debug\TestNPLabDB.exe
 E:\project\NPLab\NPLab\TestNPLabDB\obj\x86\Debug\TestNPLabDB.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\bin\Debug\TestNPLabDB.exe.config
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\obj\x86\Debug\TestNPLabDB.exe
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\obj\x86\Debug\TestNPLabDB.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\bin\Debug\TestNPLabDB.exe
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\bin\Debug\TestNPLabDB.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\bin\Debug\EntityFramework.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\bin\Debug\NPLab.Data.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\bin\Debug\NPLab.Models.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\bin\Debug\NPLab.Data.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\bin\Debug\NPLab.Models.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\bin\Debug\EntityFramework.xml
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Student\Documents\10a Radev\Project\NPLab\TestNPLabDB\obj\x86\Debug\TestNPLabDB.csprojResolveAssemblyReference.cache

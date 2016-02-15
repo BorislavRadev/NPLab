@@ -22,6 +22,8 @@ namespace NPLab.Data.Migrations
                     LastName = "Jelev",
                     Time = DateTime.Now
                 });
+
+           
         }
     }
 }

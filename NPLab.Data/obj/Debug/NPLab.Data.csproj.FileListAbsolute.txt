@@ -10,3 +10,15 @@ E:\project\NPLab\NPLab\NPLab.Data\bin\Debug\EntityFramework.SqlServer.xml
 E:\project\NPLab\NPLab\NPLab.Data\obj\Debug\NPLab.Data.csprojResolveAssemblyReference.cache
 E:\project\NPLab\NPLab\NPLab.Data\obj\Debug\NPLab.Data.dll
 E:\project\NPLab\NPLab\NPLab.Data\obj\Debug\NPLab.Data.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\bin\Debug\NPLab.Data.dll.config
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\bin\Debug\NPLab.Data.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\bin\Debug\NPLab.Data.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\bin\Debug\EntityFramework.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\bin\Debug\NPLab.Models.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\bin\Debug\NPLab.Models.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\bin\Debug\EntityFramework.xml
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\obj\Debug\NPLab.Data.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\obj\Debug\NPLab.Data.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab.Data\obj\Debug\NPLab.Data.pdb

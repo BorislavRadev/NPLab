@@ -5,3 +5,5 @@ E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.Properties.Resources.resources
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.csproj.GenerateResource.Cache
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.exe
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.exe
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.pdb
