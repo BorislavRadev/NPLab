@@ -9,7 +9,7 @@ public partial class Convert:Object
     
   	Excel._Worksheet ImpSheet;
   	Excel.Range Rng;
-  
+    int instCount = 0, currRow;
   	try
   	{
   		//Start Excel and get Application object.
@@ -37,23 +37,63 @@ public partial class Convert:Object
   		
   		//Изграждане на 3-ти ред
   		for(int i = 1; i <= 7; i++) oSheet.Cells[3, i] = i;
-  		int currRow = 4; // редът, на който се въвежда в момента
+  		currRow = 4; // редът, на който се въвежда в момента
   		
   		//Записване на всеки сектор
-  		foreach(Sectors sector in EL_2) 
+  		foreach(Sectors sector in EL_2.sectors) 
   		{
   		  oSheet.Cells[currRow, 1] = sector.Name;
   		  оSheet.Range[оSheet.Cells[currRow, 1], оSheet.Cells[currRow, 7]].Merge();
   		  оSheet.Range[оSheet.Cells[currRow, 1], оSheet.Cells[currRow, 7]].Font.Bold = true;
   		  оSheet.Range[оSheet.Cells[currRow, 1], оSheet.Cells[currRow, 7]].Font.Italic = true;
   		  оSheet.Range[оSheet.Cells[currRow, 1], оSheet.Cells[currRow, 7]].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+  		  currRow++;
   		  
   		  //Записване на етажите
+  		  foreach(Floors floor in sector.floors) 
+  		  {
+  		    oSheet.Cells[currRow, 2] = floor.Name;///шшоуу добави Name във Floors
+    		  оSheet.Range[оSheet.Cells[currRow, 1], оSheet.Cells[currRow, 7]].Font.Bold = true;
+    		  оSheet.Range[оSheet.Cells[currRow, 1], оSheet.Cells[currRow, 7]].Font.Underline = true;
+    		  оSheet.Range[оSheet.Cells[currRow, 1], оSheet.Cells[currRow, 7]].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+    		  currRow++;
+    		  
+    		  //Записване на помещенията 
+  		    foreach(Rooms room in floor.rooms) 
+  		    {
+  		      oSheet.Cells[currRow, 2] = floor.Name;///шшоуу добави Name във Floors
+      		  оSheet.Range[оSheet.Cells[currRow, 1], оSheet.Cells[currRow, 7]].Font.Bold = true;
+      		  оSheet.Range[оSheet.Cells[currRow, 1], оSheet.Cells[currRow, 7]].Font.Underline = true;
+      		  оSheet.Range[оSheet.Cells[currRow, 1], оSheet.Cells[currRow, 7]].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+      		  currRow++;
+      		  //Записване на съоръженията
+      		  foreach(Installation inst in room.installations) 
+  		      {
+  		         instCount++;
+  		         oSheet.Cells[currRow, 1] = instCount.ToString()+". ";
+  		         oSheet.Cells[currRow, 2] = inst.InstallationName;
+  		         if(!inst.isAutomaticProtector) oSheet.Cells[currRow, 3] = inst.Imperage;
+  		         else oSheet.Cells[currRow, 4] = inst.Imperage;
+  		         oSheet.Cells[currRow, 5] = inst.Coefficient;
+  		         oSheet.Cells[currRow, 6] = inst.Impedance;
+  		         if(!inst.isAutomaticProtector) оSheet.Range[оSheet.Cells[currRow, 7]].Formula = "= 230 / (D" + currRow.ToString()
+  		                                  + " * E" + currRow.ToString();
+  		         else оSheet.Range[оSheet.Cells[currRow, 7]].Formula = "= 230 / (C" + currRow.ToString()
+  		                                  + " * E" + currRow.ToString();
+  		         оSheet.Range[оSheet.Cells[currRow, 3], оSheet.Cells[currRow, 7]].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+  		         оSheet.Range[оSheet.Cells[currRow, 1]].HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+  		         оSheet.Range[оSheet.Cells[currRow, 2]].HorizontalAlignment = Excel.XlHAlign.xlHAlignLeft;
+  		      }
+  		    }
+  		  }
   		}
   		
-  		//Format A1:D1 as bold, vertical alignment = center.
-  		oSheet.get_Range("A1", "D1").Font.Bold = true;
-  		oSheet.get_Range("A1", "D1").VerticalAlignment = 
+  		//Формат на таблицата
+  		oSheet.get_Range("A1", "G" + currRow.ToString()).Font.Name = "Bookman Old Style";
+  		oSheet.get_Range("A3", "G" + currRow.ToString()).Font.Size = 11;
+  		oSheet.get_Range("A2", "G2").Font.Size = 10;
+  		oSheet.get_Range("A1", "G1").Font.Size = 9;
+  		oSheet.get_Range("A1", "G" + currRow.ToString()).VerticalAlignment = 
   			Excel.XlVAlign.xlVAlignCenter;
   		
     }
