@@ -97,5 +97,10 @@ public partial class Convert:Object
   			Excel.XlVAlign.xlVAlignCenter;
   		
     }
-
+    catch
+    {
+      
+    }
+    }
+  }  
 }
