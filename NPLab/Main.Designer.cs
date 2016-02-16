@@ -35,6 +35,25 @@
             this.Object = new System.Windows.Forms.TextBox();
             this.Client = new System.Windows.Forms.TextBox();
             this.Isolation = new System.Windows.Forms.TabPage();
+            this.PE = new System.Windows.Forms.CheckBox();
+            this.N = new System.Windows.Forms.CheckBox();
+            this.L3 = new System.Windows.Forms.CheckBox();
+            this.L2 = new System.Windows.Forms.CheckBox();
+            this.L1 = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.CabelArea = new System.Windows.Forms.NumericUpDown();
+            this.Label8 = new System.Windows.Forms.Label();
+            this.TypeCabel = new System.Windows.Forms.ComboBox();
+            this.numberOfCabels = new System.Windows.Forms.Label();
+            this.Number = new System.Windows.Forms.NumericUpDown();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.NameOfCabel = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Norm_Label = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Naprejenie = new System.Windows.Forms.NumericUpDown();
+            this.Norm = new System.Windows.Forms.NumericUpDown();
             this.Impedance = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.CurrentInformation = new System.Windows.Forms.TableLayoutPanel();
@@ -48,22 +67,25 @@
             this.Grounding = new System.Windows.Forms.TabPage();
             this.LightningProtection = new System.Windows.Forms.TabPage();
             this.DefectiveProtection = new System.Windows.Forms.TabPage();
-            this.Norm = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Norm_Label = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.PEN = new System.Windows.Forms.CheckBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.ButtonForAdd = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.EngineeerName = new System.Windows.Forms.ComboBox();
             this.Project.SuspendLayout();
             this.ObjectData.SuspendLayout();
             this.Isolation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CabelArea)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Number)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Naprejenie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Norm)).BeginInit();
             this.Impedance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coefficient)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Norm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // Project
@@ -130,11 +152,31 @@
             // 
             // Isolation
             // 
-            this.Isolation.Controls.Add(this.tableLayoutPanel1);
+            this.Isolation.BackColor = System.Drawing.Color.SteelBlue;
+            this.Isolation.Controls.Add(this.EngineeerName);
+            this.Isolation.Controls.Add(this.label12);
+            this.Isolation.Controls.Add(this.ButtonForAdd);
+            this.Isolation.Controls.Add(this.label11);
+            this.Isolation.Controls.Add(this.numericUpDown1);
+            this.Isolation.Controls.Add(this.PEN);
+            this.Isolation.Controls.Add(this.PE);
+            this.Isolation.Controls.Add(this.N);
+            this.Isolation.Controls.Add(this.L3);
+            this.Isolation.Controls.Add(this.L2);
+            this.Isolation.Controls.Add(this.L1);
+            this.Isolation.Controls.Add(this.label10);
+            this.Isolation.Controls.Add(this.label9);
+            this.Isolation.Controls.Add(this.CabelArea);
+            this.Isolation.Controls.Add(this.Label8);
+            this.Isolation.Controls.Add(this.TypeCabel);
+            this.Isolation.Controls.Add(this.numberOfCabels);
+            this.Isolation.Controls.Add(this.Number);
+            this.Isolation.Controls.Add(this.textBoxName);
+            this.Isolation.Controls.Add(this.NameOfCabel);
             this.Isolation.Controls.Add(this.label7);
             this.Isolation.Controls.Add(this.Norm_Label);
             this.Isolation.Controls.Add(this.label6);
-            this.Isolation.Controls.Add(this.numericUpDown2);
+            this.Isolation.Controls.Add(this.Naprejenie);
             this.Isolation.Controls.Add(this.Norm);
             this.Isolation.Location = new System.Drawing.Point(4, 22);
             this.Isolation.Name = "Isolation";
@@ -142,7 +184,220 @@
             this.Isolation.Size = new System.Drawing.Size(838, 608);
             this.Isolation.TabIndex = 1;
             this.Isolation.Text = "Изолация";
-            this.Isolation.UseVisualStyleBackColor = true;
+            // 
+            // PE
+            // 
+            this.PE.AutoSize = true;
+            this.PE.Location = new System.Drawing.Point(613, 120);
+            this.PE.Name = "PE";
+            this.PE.Size = new System.Drawing.Size(40, 17);
+            this.PE.TabIndex = 19;
+            this.PE.Text = "PE";
+            this.PE.UseVisualStyleBackColor = true;
+            // 
+            // N
+            // 
+            this.N.AutoSize = true;
+            this.N.Location = new System.Drawing.Point(573, 152);
+            this.N.Name = "N";
+            this.N.Size = new System.Drawing.Size(34, 17);
+            this.N.TabIndex = 17;
+            this.N.Text = "N";
+            this.N.UseVisualStyleBackColor = true;
+            // 
+            // L3
+            // 
+            this.L3.AutoSize = true;
+            this.L3.Location = new System.Drawing.Point(569, 120);
+            this.L3.Name = "L3";
+            this.L3.Size = new System.Drawing.Size(38, 17);
+            this.L3.TabIndex = 16;
+            this.L3.Text = "L3";
+            this.L3.UseVisualStyleBackColor = true;
+            // 
+            // L2
+            // 
+            this.L2.AutoSize = true;
+            this.L2.Location = new System.Drawing.Point(529, 152);
+            this.L2.Name = "L2";
+            this.L2.Size = new System.Drawing.Size(38, 17);
+            this.L2.TabIndex = 15;
+            this.L2.Text = "L2";
+            this.L2.UseVisualStyleBackColor = true;
+            // 
+            // L1
+            // 
+            this.L1.AutoSize = true;
+            this.L1.Location = new System.Drawing.Point(529, 120);
+            this.L1.Name = "L1";
+            this.L1.Size = new System.Drawing.Size(38, 17);
+            this.L1.TabIndex = 14;
+            this.L1.Text = "L1";
+            this.L1.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(399, 157);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(12, 13);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "x";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(414, 122);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Сечение";
+            // 
+            // CabelArea
+            // 
+            this.CabelArea.DecimalPlaces = 1;
+            this.CabelArea.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.CabelArea.Location = new System.Drawing.Point(417, 151);
+            this.CabelArea.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.CabelArea.Name = "CabelArea";
+            this.CabelArea.Size = new System.Drawing.Size(70, 20);
+            this.CabelArea.TabIndex = 11;
+            this.CabelArea.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            // 
+            // Label8
+            // 
+            this.Label8.AutoSize = true;
+            this.Label8.Location = new System.Drawing.Point(216, 122);
+            this.Label8.Name = "Label8";
+            this.Label8.Size = new System.Drawing.Size(59, 13);
+            this.Label8.TabIndex = 10;
+            this.Label8.Text = "Тип кабел";
+            // 
+            // TypeCabel
+            // 
+            this.TypeCabel.FormattingEnabled = true;
+            this.TypeCabel.Items.AddRange(new object[] {
+            "СВТ",
+            " ПВВМБ1"});
+            this.TypeCabel.Location = new System.Drawing.Point(219, 150);
+            this.TypeCabel.Name = "TypeCabel";
+            this.TypeCabel.Size = new System.Drawing.Size(86, 21);
+            this.TypeCabel.TabIndex = 9;
+            // 
+            // numberOfCabels
+            // 
+            this.numberOfCabels.AutoSize = true;
+            this.numberOfCabels.Location = new System.Drawing.Point(320, 122);
+            this.numberOfCabels.Name = "numberOfCabels";
+            this.numberOfCabels.Size = new System.Drawing.Size(35, 13);
+            this.numberOfCabels.TabIndex = 8;
+            this.numberOfCabels.Text = "Брой ";
+            // 
+            // Number
+            // 
+            this.Number.Location = new System.Drawing.Point(323, 151);
+            this.Number.Name = "Number";
+            this.Number.Size = new System.Drawing.Size(70, 20);
+            this.Number.TabIndex = 7;
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.Location = new System.Drawing.Point(48, 150);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(146, 20);
+            this.textBoxName.TabIndex = 6;
+            // 
+            // NameOfCabel
+            // 
+            this.NameOfCabel.AutoSize = true;
+            this.NameOfCabel.Location = new System.Drawing.Point(45, 121);
+            this.NameOfCabel.Name = "NameOfCabel";
+            this.NameOfCabel.Size = new System.Drawing.Size(29, 13);
+            this.NameOfCabel.TabIndex = 5;
+            this.NameOfCabel.Text = "Име";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(257, 72);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(203, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Номинално напрежение на източника:";
+            // 
+            // Norm_Label
+            // 
+            this.Norm_Label.AutoSize = true;
+            this.Norm_Label.Location = new System.Drawing.Point(45, 72);
+            this.Norm_Label.Name = "Norm_Label";
+            this.Norm_Label.Size = new System.Drawing.Size(122, 13);
+            this.Norm_Label.TabIndex = 3;
+            this.Norm_Label.Text = "Минимално измерено:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(64, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.TabIndex = 2;
+            // 
+            // Naprejenie
+            // 
+            this.Naprejenie.Increment = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.Naprejenie.Location = new System.Drawing.Point(466, 65);
+            this.Naprejenie.Maximum = new decimal(new int[] {
+            1500,
+            0,
+            0,
+            0});
+            this.Naprejenie.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.Naprejenie.Name = "Naprejenie";
+            this.Naprejenie.Size = new System.Drawing.Size(59, 20);
+            this.Naprejenie.TabIndex = 1;
+            this.Naprejenie.Value = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            // 
+            // Norm
+            // 
+            this.Norm.DecimalPlaces = 1;
+            this.Norm.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.Norm.Location = new System.Drawing.Point(173, 65);
+            this.Norm.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.Norm.Name = "Norm";
+            this.Norm.Size = new System.Drawing.Size(59, 20);
+            this.Norm.TabIndex = 0;
             // 
             // Impedance
             // 
@@ -283,78 +538,63 @@
             this.DefectiveProtection.Text = "Дефектнотокова защита";
             this.DefectiveProtection.UseVisualStyleBackColor = true;
             // 
-            // Norm
+            // PEN
             // 
-            this.Norm.Location = new System.Drawing.Point(173, 65);
-            this.Norm.Name = "Norm";
-            this.Norm.Size = new System.Drawing.Size(59, 20);
-            this.Norm.TabIndex = 0;
+            this.PEN.AutoSize = true;
+            this.PEN.Location = new System.Drawing.Point(613, 152);
+            this.PEN.Name = "PEN";
+            this.PEN.Size = new System.Drawing.Size(48, 17);
+            this.PEN.TabIndex = 20;
+            this.PEN.Text = "PEN";
+            this.PEN.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown2
+            // label11
             // 
-            this.numericUpDown2.Increment = new decimal(new int[] {
-            500,
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(693, 122);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(59, 13);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Измерено";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Increment = new decimal(new int[] {
+            5,
             0,
             0,
-            0});
-            this.numericUpDown2.Location = new System.Drawing.Point(466, 70);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            1500,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(59, 20);
-            this.numericUpDown2.TabIndex = 1;
-            this.numericUpDown2.Value = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
+            65536});
+            this.numericUpDown1.Location = new System.Drawing.Point(696, 151);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(70, 20);
+            this.numericUpDown1.TabIndex = 21;
             // 
-            // label6
+            // ButtonForAdd
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(64, 32);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 13);
-            this.label6.TabIndex = 2;
+            this.ButtonForAdd.Location = new System.Drawing.Point(573, 65);
+            this.ButtonForAdd.Name = "ButtonForAdd";
+            this.ButtonForAdd.Size = new System.Drawing.Size(112, 26);
+            this.ButtonForAdd.TabIndex = 23;
+            this.ButtonForAdd.Text = "Добави кабел";
+            this.ButtonForAdd.UseVisualStyleBackColor = true;
+            this.ButtonForAdd.Click += new System.EventHandler(this.ButtonForAdd_Click);
             // 
-            // Norm_Label
+            // label12
             // 
-            this.Norm_Label.AutoSize = true;
-            this.Norm_Label.Location = new System.Drawing.Point(45, 72);
-            this.Norm_Label.Name = "Norm_Label";
-            this.Norm_Label.Size = new System.Drawing.Size(122, 13);
-            this.Norm_Label.TabIndex = 3;
-            this.Norm_Label.Text = "Минимално измерено:";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(49, 25);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 13);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "Име инж. :";
             // 
-            // label7
+            // EngineeerName
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(257, 72);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(203, 13);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Номинално напрежение на източника:";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(46, 105);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 376F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(758, 455);
-            this.tableLayoutPanel1.TabIndex = 5;
+            this.EngineeerName.FormattingEnabled = true;
+            this.EngineeerName.Location = new System.Drawing.Point(120, 22);
+            this.EngineeerName.Name = "EngineeerName";
+            this.EngineeerName.Size = new System.Drawing.Size(74, 21);
+            this.EngineeerName.TabIndex = 25;
             // 
             // Main
             // 
@@ -370,14 +610,17 @@
             this.ObjectData.PerformLayout();
             this.Isolation.ResumeLayout(false);
             this.Isolation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CabelArea)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Number)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Naprejenie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Norm)).EndInit();
             this.Impedance.ResumeLayout(false);
             this.Impedance.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coefficient)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Norm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -407,9 +650,28 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label Norm_Label;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown Naprejenie;
         private System.Windows.Forms.NumericUpDown Norm;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.NumericUpDown Number;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Label NameOfCabel;
+        private System.Windows.Forms.Label numberOfCabels;
+        private System.Windows.Forms.Label Label8;
+        private System.Windows.Forms.ComboBox TypeCabel;
+        private System.Windows.Forms.CheckBox PE;
+        private System.Windows.Forms.CheckBox N;
+        private System.Windows.Forms.CheckBox L3;
+        private System.Windows.Forms.CheckBox L2;
+        private System.Windows.Forms.CheckBox L1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.NumericUpDown CabelArea;
+        private System.Windows.Forms.CheckBox PEN;
+        private System.Windows.Forms.Button ButtonForAdd;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.ComboBox EngineeerName;
+        private System.Windows.Forms.Label label12;
 
     }
 }

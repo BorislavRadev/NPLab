@@ -13,13 +13,12 @@ namespace TestNPLabDB
         public static void Main()
         {
             Database.SetInitializer( new MigrateDatabaseToLatestVersion<NPLabDbContext,Configuration>()); 
-
+            /*
             var db = new NPLabDbContext();
 
             var engineer = new Engineers
             {
-                FirstName = "Malin",
-                LastName = "Zhelev",
+                NameOfEngineer = "Malin Zhelev"
                 Time = DateTime.Now
             };
 
@@ -27,6 +26,7 @@ namespace TestNPLabDB
             db.SaveChanges();
 
             Console.WriteLine(db.Engineers.Count());
+             * */
         }
     }
 }

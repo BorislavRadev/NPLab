@@ -15,11 +15,10 @@ namespace NPLab.Data.Migrations
         protected override void Seed(NPLabDbContext context)
         {
             context.Engineers.AddOrUpdate(
-                x => x.FirstName,
+                x => x.NameOfEngineer,
                 new Engineers
                 {
-                    FirstName = "Malin",
-                    LastName = "Jelev",
+                    NameOfEngineer = "Malin Jelev",
                     Time = DateTime.Now
                 });
 
