@@ -38,7 +38,7 @@ namespace NPLab
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<NPLabDbContext, Configuration>());
 
             var db = new NPLabDbContext();
-
+            /*
             var el_1 = new EL_1
             {
                 NameOfEngineer = EngineerName.ToString(),
@@ -48,7 +48,7 @@ namespace NPLab
             };
 
             db.EL_1.Add(el_1);
-            db.SaveChanges();
+            db.SaveChanges();*/
 
             TextBox name = new TextBox();
             name.Size = textBoxName.Size;
@@ -60,6 +60,20 @@ namespace NPLab
             Isolation.Controls.Add(Names[Names.Count - 1]);
             Names[Names.Count - 1].Visible = true;
 
+            ComboBox cabel = new ComboBox();
+            cabel.Size = TypeCabel.Size;
+            cabel.Left = TypeCabel.Left;
+            cabel.Top = TypeCabs[TypeCabs.Count - 1].Top + TypeCabs[TypeCabs.Count - 1].Height + 10;
+            //string itemsText = "СВТ,ПВВМБ1";
+            //itemsText = itemsText.Replace(",", "," + System.Environment.NewLine);
+            //cabel.Items = itemsText;
+            //cabel.Items = TypeCabel.Items;
+            cabel.Name = "ComboBox" + TypeCabs.Count.ToString();
+            TypeCabs.Add(cabel);
+            Isolation.Controls.Add(TypeCabs[TypeCabs.Count - 1]);
+            TypeCabs[TypeCabs.Count - 1].Visible = true;
+
+
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -68,12 +82,11 @@ namespace NPLab
 
             var db = new NPLabDbContext();
             //string engi = db.Engineers.Select();
-            Engineers table = new Engineers();
+            //Engineers table = new Engineers();
     
-            foreach (string eng in table.NameOfEngineer) EngineerName.Items.Add(eng);
+            //foreach (string eng in Engineers.) EngineerName.Items.Add(eng);
            
             Names.Add(textBoxName);
-            
             TypeCabs.Add(TypeCabel);
             Count.Add(Number);
             Surface.Add(CabelArea);

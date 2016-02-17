@@ -16,6 +16,9 @@ namespace NPLab.Models
 
         public double Level { get; set; }
 
+
+        public string NameFloor_El_4 { get; set; }
+
         public ICollection<Rooms_El_4> ListOfRooms_El_4
         {
             get { return this.RoomsOfEl4; }

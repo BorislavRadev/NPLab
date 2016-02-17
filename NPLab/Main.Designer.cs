@@ -358,9 +358,10 @@
             // TypeCabel
             // 
             this.TypeCabel.FormattingEnabled = true;
+            this.TypeCabel.ItemHeight = 13;
             this.TypeCabel.Items.AddRange(new object[] {
             "СВТ",
-            " ПВВМБ1"});
+            "ПВВМБ1"});
             this.TypeCabel.Location = new System.Drawing.Point(219, 150);
             this.TypeCabel.Name = "TypeCabel";
             this.TypeCabel.Size = new System.Drawing.Size(86, 21);
