@@ -9,6 +9,7 @@ C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.pdb
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.csprojResolveAssemblyReference.cache
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.ImpRoom.resources
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.Main.resources
+<<<<<<< HEAD
 C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\NPLab.exe.config
 C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.csprojResolveAssemblyReference.cache
 C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.ImpRoom.resources
@@ -25,3 +26,14 @@ C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\NPLab.Data.pd
 C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\NPLab.Models.pdb
 C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\EntityFramework.xml
 C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\EntityFramework.SqlServer.xml
+=======
+C:\Users\Student\Documents\C#\Project\NPLab\bin\Debug\NPLab.exe.config
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.exe
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.pdb
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.csproj.ResolveComReference.cache
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.ImpRoom.resources
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.Main.resources
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.Properties.Resources.resources
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.csproj.GenerateResource.Cache
+>>>>>>> c62cb83fd26f7c619661348f16180cf2a6929a27
