@@ -9,3 +9,12 @@ C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.pdb
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.csprojResolveAssemblyReference.cache
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.ImpRoom.resources
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.Main.resources
+C:\Users\Student\Documents\C#\Project\NPLab\bin\Debug\NPLab.exe.config
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.exe
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.pdb
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.csproj.ResolveComReference.cache
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.ImpRoom.resources
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.Main.resources
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.Properties.Resources.resources
+C:\Users\Student\Documents\C#\Project\NPLab\obj\x86\Debug\NPLab.csproj.GenerateResource.Cache
