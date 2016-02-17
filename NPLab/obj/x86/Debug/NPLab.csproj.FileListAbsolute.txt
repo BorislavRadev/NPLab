@@ -9,3 +9,19 @@ C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.pdb
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.csprojResolveAssemblyReference.cache
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.ImpRoom.resources
 E:\project\NPLab\NPLab\NPLab\obj\x86\Debug\NPLab.Main.resources
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\NPLab.exe.config
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.ImpRoom.resources
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.Main.resources
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.Properties.Resources.resources
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\obj\x86\Debug\NPLab.csproj.GenerateResource.Cache
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\NPLab.exe
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\NPLab.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\EntityFramework.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\NPLab.Data.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\NPLab.Models.dll
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\NPLab.Data.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\NPLab.Models.pdb
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\EntityFramework.xml
+C:\Users\Student\Documents\10a Radev\Project\NPLab\NPLab\bin\Debug\EntityFramework.SqlServer.xml

@@ -35,11 +35,18 @@
             this.Object = new System.Windows.Forms.TextBox();
             this.Client = new System.Windows.Forms.TextBox();
             this.Isolation = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.PE = new System.Windows.Forms.CheckBox();
-            this.N = new System.Windows.Forms.CheckBox();
-            this.L3 = new System.Windows.Forms.CheckBox();
-            this.L2 = new System.Windows.Forms.CheckBox();
             this.L1 = new System.Windows.Forms.CheckBox();
+            this.L2 = new System.Windows.Forms.CheckBox();
+            this.L3 = new System.Windows.Forms.CheckBox();
+            this.N = new System.Windows.Forms.CheckBox();
+            this.PEN = new System.Windows.Forms.CheckBox();
+            this.EngineerName = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.ButtonForAdd = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.CabelArea = new System.Windows.Forms.NumericUpDown();
@@ -67,15 +74,11 @@
             this.Grounding = new System.Windows.Forms.TabPage();
             this.LightningProtection = new System.Windows.Forms.TabPage();
             this.DefectiveProtection = new System.Windows.Forms.TabPage();
-            this.PEN = new System.Windows.Forms.CheckBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.ButtonForAdd = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.EngineeerName = new System.Windows.Forms.ComboBox();
             this.Project.SuspendLayout();
             this.ObjectData.SuspendLayout();
             this.Isolation.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CabelArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Number)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Naprejenie)).BeginInit();
@@ -85,7 +88,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Maximum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coefficient)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // Project
@@ -153,17 +155,12 @@
             // Isolation
             // 
             this.Isolation.BackColor = System.Drawing.Color.SteelBlue;
-            this.Isolation.Controls.Add(this.EngineeerName);
+            this.Isolation.Controls.Add(this.groupBox1);
+            this.Isolation.Controls.Add(this.EngineerName);
             this.Isolation.Controls.Add(this.label12);
             this.Isolation.Controls.Add(this.ButtonForAdd);
             this.Isolation.Controls.Add(this.label11);
             this.Isolation.Controls.Add(this.numericUpDown1);
-            this.Isolation.Controls.Add(this.PEN);
-            this.Isolation.Controls.Add(this.PE);
-            this.Isolation.Controls.Add(this.N);
-            this.Isolation.Controls.Add(this.L3);
-            this.Isolation.Controls.Add(this.L2);
-            this.Isolation.Controls.Add(this.L1);
             this.Isolation.Controls.Add(this.label10);
             this.Isolation.Controls.Add(this.label9);
             this.Isolation.Controls.Add(this.CabelArea);
@@ -185,55 +182,128 @@
             this.Isolation.TabIndex = 1;
             this.Isolation.Text = "Изолация";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.PE);
+            this.groupBox1.Controls.Add(this.L1);
+            this.groupBox1.Controls.Add(this.L2);
+            this.groupBox1.Controls.Add(this.L3);
+            this.groupBox1.Controls.Add(this.N);
+            this.groupBox1.Controls.Add(this.PEN);
+            this.groupBox1.Location = new System.Drawing.Point(518, 97);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(146, 78);
+            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Проводници";
+            // 
             // PE
             // 
             this.PE.AutoSize = true;
-            this.PE.Location = new System.Drawing.Point(613, 120);
+            this.PE.Location = new System.Drawing.Point(94, 19);
             this.PE.Name = "PE";
             this.PE.Size = new System.Drawing.Size(40, 17);
             this.PE.TabIndex = 19;
             this.PE.Text = "PE";
             this.PE.UseVisualStyleBackColor = true;
             // 
-            // N
+            // L1
             // 
-            this.N.AutoSize = true;
-            this.N.Location = new System.Drawing.Point(573, 152);
-            this.N.Name = "N";
-            this.N.Size = new System.Drawing.Size(34, 17);
-            this.N.TabIndex = 17;
-            this.N.Text = "N";
-            this.N.UseVisualStyleBackColor = true;
-            // 
-            // L3
-            // 
-            this.L3.AutoSize = true;
-            this.L3.Location = new System.Drawing.Point(569, 120);
-            this.L3.Name = "L3";
-            this.L3.Size = new System.Drawing.Size(38, 17);
-            this.L3.TabIndex = 16;
-            this.L3.Text = "L3";
-            this.L3.UseVisualStyleBackColor = true;
+            this.L1.AutoSize = true;
+            this.L1.Location = new System.Drawing.Point(10, 19);
+            this.L1.Name = "L1";
+            this.L1.Size = new System.Drawing.Size(38, 17);
+            this.L1.TabIndex = 14;
+            this.L1.Text = "L1";
+            this.L1.UseVisualStyleBackColor = true;
             // 
             // L2
             // 
             this.L2.AutoSize = true;
-            this.L2.Location = new System.Drawing.Point(529, 152);
+            this.L2.Location = new System.Drawing.Point(10, 51);
             this.L2.Name = "L2";
             this.L2.Size = new System.Drawing.Size(38, 17);
             this.L2.TabIndex = 15;
             this.L2.Text = "L2";
             this.L2.UseVisualStyleBackColor = true;
             // 
-            // L1
+            // L3
             // 
-            this.L1.AutoSize = true;
-            this.L1.Location = new System.Drawing.Point(529, 120);
-            this.L1.Name = "L1";
-            this.L1.Size = new System.Drawing.Size(38, 17);
-            this.L1.TabIndex = 14;
-            this.L1.Text = "L1";
-            this.L1.UseVisualStyleBackColor = true;
+            this.L3.AutoSize = true;
+            this.L3.Location = new System.Drawing.Point(50, 19);
+            this.L3.Name = "L3";
+            this.L3.Size = new System.Drawing.Size(38, 17);
+            this.L3.TabIndex = 16;
+            this.L3.Text = "L3";
+            this.L3.UseVisualStyleBackColor = true;
+            // 
+            // N
+            // 
+            this.N.AutoSize = true;
+            this.N.Location = new System.Drawing.Point(54, 51);
+            this.N.Name = "N";
+            this.N.Size = new System.Drawing.Size(34, 17);
+            this.N.TabIndex = 17;
+            this.N.Text = "N";
+            this.N.UseVisualStyleBackColor = true;
+            // 
+            // PEN
+            // 
+            this.PEN.AutoSize = true;
+            this.PEN.Location = new System.Drawing.Point(94, 51);
+            this.PEN.Name = "PEN";
+            this.PEN.Size = new System.Drawing.Size(48, 17);
+            this.PEN.TabIndex = 20;
+            this.PEN.Text = "PEN";
+            this.PEN.UseVisualStyleBackColor = true;
+            // 
+            // EngineerName
+            // 
+            this.EngineerName.FormattingEnabled = true;
+            this.EngineerName.Location = new System.Drawing.Point(120, 22);
+            this.EngineerName.Name = "EngineerName";
+            this.EngineerName.Size = new System.Drawing.Size(74, 21);
+            this.EngineerName.TabIndex = 25;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(49, 25);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 13);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "Име инж. :";
+            // 
+            // ButtonForAdd
+            // 
+            this.ButtonForAdd.Location = new System.Drawing.Point(573, 65);
+            this.ButtonForAdd.Name = "ButtonForAdd";
+            this.ButtonForAdd.Size = new System.Drawing.Size(112, 26);
+            this.ButtonForAdd.TabIndex = 23;
+            this.ButtonForAdd.Text = "Добави кабел";
+            this.ButtonForAdd.UseVisualStyleBackColor = true;
+            this.ButtonForAdd.Click += new System.EventHandler(this.ButtonForAdd_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(693, 122);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(59, 13);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Измерено";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.numericUpDown1.Location = new System.Drawing.Point(696, 151);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(70, 20);
+            this.numericUpDown1.TabIndex = 21;
             // 
             // label10
             // 
@@ -318,6 +388,7 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(146, 20);
             this.textBoxName.TabIndex = 6;
+            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // NameOfCabel
             // 
@@ -538,64 +609,6 @@
             this.DefectiveProtection.Text = "Дефектнотокова защита";
             this.DefectiveProtection.UseVisualStyleBackColor = true;
             // 
-            // PEN
-            // 
-            this.PEN.AutoSize = true;
-            this.PEN.Location = new System.Drawing.Point(613, 152);
-            this.PEN.Name = "PEN";
-            this.PEN.Size = new System.Drawing.Size(48, 17);
-            this.PEN.TabIndex = 20;
-            this.PEN.Text = "PEN";
-            this.PEN.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(693, 122);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(59, 13);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "Измерено";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.numericUpDown1.Location = new System.Drawing.Point(696, 151);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(70, 20);
-            this.numericUpDown1.TabIndex = 21;
-            // 
-            // ButtonForAdd
-            // 
-            this.ButtonForAdd.Location = new System.Drawing.Point(573, 65);
-            this.ButtonForAdd.Name = "ButtonForAdd";
-            this.ButtonForAdd.Size = new System.Drawing.Size(112, 26);
-            this.ButtonForAdd.TabIndex = 23;
-            this.ButtonForAdd.Text = "Добави кабел";
-            this.ButtonForAdd.UseVisualStyleBackColor = true;
-            this.ButtonForAdd.Click += new System.EventHandler(this.ButtonForAdd_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(49, 25);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 13);
-            this.label12.TabIndex = 24;
-            this.label12.Text = "Име инж. :";
-            // 
-            // EngineeerName
-            // 
-            this.EngineeerName.FormattingEnabled = true;
-            this.EngineeerName.Location = new System.Drawing.Point(120, 22);
-            this.EngineeerName.Name = "EngineeerName";
-            this.EngineeerName.Size = new System.Drawing.Size(74, 21);
-            this.EngineeerName.TabIndex = 25;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -604,12 +617,15 @@
             this.Controls.Add(this.Project);
             this.Name = "Main";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Main_Load);
             this.Project.ResumeLayout(false);
             this.ObjectData.ResumeLayout(false);
             this.ObjectData.PerformLayout();
             this.Isolation.ResumeLayout(false);
             this.Isolation.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CabelArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Number)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Naprejenie)).EndInit();
@@ -620,7 +636,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Maximum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coefficient)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -670,8 +685,9 @@
         private System.Windows.Forms.Button ButtonForAdd;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox EngineeerName;
+        private System.Windows.Forms.ComboBox EngineerName;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.GroupBox groupBox1;
 
     }
 }
