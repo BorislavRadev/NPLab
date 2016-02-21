@@ -40,3 +40,17 @@ C:\Users\Student\Documents\C#\Project\TestNPLabDB\bin\Debug\EntityFramework.SqlS
 C:\Users\Student\Documents\C#\Project\TestNPLabDB\obj\x86\Debug\TestNPLabDB.csprojResolveAssemblyReference.cache
 C:\Users\Student\Documents\C#\Project\TestNPLabDB\obj\x86\Debug\TestNPLabDB.exe
 C:\Users\Student\Documents\C#\Project\TestNPLabDB\obj\x86\Debug\TestNPLabDB.pdb
+E:\project\NPLab\TestNPLabDB\bin\Debug\TestNPLabDB.exe.config
+E:\project\NPLab\TestNPLabDB\bin\Debug\TestNPLabDB.exe
+E:\project\NPLab\TestNPLabDB\bin\Debug\TestNPLabDB.pdb
+E:\project\NPLab\TestNPLabDB\bin\Debug\EntityFramework.dll
+E:\project\NPLab\TestNPLabDB\bin\Debug\EntityFramework.SqlServer.dll
+E:\project\NPLab\TestNPLabDB\bin\Debug\NPLab.Data.dll
+E:\project\NPLab\TestNPLabDB\bin\Debug\NPLab.Models.dll
+E:\project\NPLab\TestNPLabDB\bin\Debug\NPLab.Data.pdb
+E:\project\NPLab\TestNPLabDB\bin\Debug\NPLab.Models.pdb
+E:\project\NPLab\TestNPLabDB\bin\Debug\EntityFramework.xml
+E:\project\NPLab\TestNPLabDB\bin\Debug\EntityFramework.SqlServer.xml
+E:\project\NPLab\TestNPLabDB\obj\x86\Debug\TestNPLabDB.csprojResolveAssemblyReference.cache
+E:\project\NPLab\TestNPLabDB\obj\x86\Debug\TestNPLabDB.exe
+E:\project\NPLab\TestNPLabDB\obj\x86\Debug\TestNPLabDB.pdb

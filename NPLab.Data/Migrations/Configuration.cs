@@ -9,6 +9,7 @@ namespace NPLab.Data.Migrations
         public Configuration()
         {
             this.AutomaticMigrationsEnabled = true;
+            this.AutomaticMigrationDataLossAllowed = true;
             this.ContextKey = "NPLab.Data.NPLabDbContext";
         }
 
@@ -18,7 +19,7 @@ namespace NPLab.Data.Migrations
                 x => x.NameOfEngineer,
                 new Engineers
                 {
-                    NameOfEngineer = "Malin Jelev",
+                    NameOfEngineer = "Malin Zhelev",
                     Time = DateTime.Now
                 });
 

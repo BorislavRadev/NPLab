@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using NPLab.Models;
 
 namespace NPLab
 {
@@ -10,6 +11,7 @@ namespace NPLab
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+       // public Objects currObj = new Objects();
         [STAThread]
         static void Main()
         {

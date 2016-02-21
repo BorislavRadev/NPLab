@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using NPLab.Data;
 using NPLab.Models;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using NPLab.Data.Migrations;
 
 namespace NPLab
@@ -32,13 +33,14 @@ namespace NPLab
         public Main()
         {
             InitializeComponent();
+
         }
         private void ButtonForAdd_Click(object sender, EventArgs e)
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<NPLabDbContext, Configuration>());
 
             var db = new NPLabDbContext();
-            /*
+            
             var el_1 = new EL_1
             {
                 NameOfEngineer = EngineerName.ToString(),
@@ -46,9 +48,22 @@ namespace NPLab
                 SourceVoltage = Convert.ToInt32(Naprejenie.Value),
                 Min = Convert.ToInt32(Norm.Value),
             };
-
+            /*
+            var inst = new Installations
+            {
+                ...
+                ...
+              Item = " ";
+                ...
+                ...
+            };
+             var instItem = new InstallatinItem
+              {
+              type = (0,1 ili 2)
+              };
+            */
             db.EL_1.Add(el_1);
-            db.SaveChanges();*/
+            db.SaveChanges();
 
             TextBox name = new TextBox();
             name.Size = textBoxName.Size;
@@ -78,14 +93,15 @@ namespace NPLab
 
         private void Main_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'nPLabDataSet.Engineers' table. You can move, or remove it, as needed.
+            this.engineersTableAdapter.Fill(this.nPLabDataSet.Engineers);
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<NPLabDbContext, Configuration>());
 
             var db = new NPLabDbContext();
-            //string engi = db.Engineers.Select();
-            //Engineers table = new Engineers();
-    
-            //foreach (string eng in Engineers.) EngineerName.Items.Add(eng);
-           
+
+//            var names = NPLabDbContext.Engineers.ToList();
+           // string names;
+            //foreach (string name in names) EngineerName.Items.Add(name);
             Names.Add(textBoxName);
             TypeCabs.Add(TypeCabel);
             Count.Add(Number);
@@ -98,8 +114,15 @@ namespace NPLab
             PEs.Add(PE);
             PENs.Add(PEN);
         }
-
-        private void textBoxName_TextChanged(object sender, EventArgs e)
+        public Engineers GetById(string NameOfEngineer, NPLabDbContext context)
+        {
+            return context.Engineers.Find(NameOfEngineer);
+        }
+        public ICollection<Engineers> GetAll(NPLabDbContext context)
+        {
+            return context.Engineers.ToList();
+        }
+         private void textBoxName_TextChanged(object sender, EventArgs e)
         {
 
         }

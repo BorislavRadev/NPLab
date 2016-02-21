@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Project = new System.Windows.Forms.TabControl();
             this.ObjectData = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
@@ -74,6 +75,9 @@
             this.Grounding = new System.Windows.Forms.TabPage();
             this.LightningProtection = new System.Windows.Forms.TabPage();
             this.DefectiveProtection = new System.Windows.Forms.TabPage();
+            this.nPLabDataSet = new NPLab.NPLabDataSet();
+            this.engineersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.engineersTableAdapter = new NPLab.NPLabDataSetTableAdapters.EngineersTableAdapter();
             this.Project.SuspendLayout();
             this.ObjectData.SuspendLayout();
             this.Isolation.SuspendLayout();
@@ -88,6 +92,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Maximum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coefficient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nPLabDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.engineersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Project
@@ -259,10 +265,13 @@
             // 
             // EngineerName
             // 
+            this.EngineerName.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.engineersBindingSource, "NameOfEngineer", true));
+            this.EngineerName.DataSource = this.engineersBindingSource;
+            this.EngineerName.DisplayMember = "NameOfEngineer";
             this.EngineerName.FormattingEnabled = true;
             this.EngineerName.Location = new System.Drawing.Point(120, 22);
             this.EngineerName.Name = "EngineerName";
-            this.EngineerName.Size = new System.Drawing.Size(74, 21);
+            this.EngineerName.Size = new System.Drawing.Size(243, 21);
             this.EngineerName.TabIndex = 25;
             // 
             // label12
@@ -610,6 +619,20 @@
             this.DefectiveProtection.Text = "Дефектнотокова защита";
             this.DefectiveProtection.UseVisualStyleBackColor = true;
             // 
+            // nPLabDataSet
+            // 
+            this.nPLabDataSet.DataSetName = "NPLabDataSet";
+            this.nPLabDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // engineersBindingSource
+            // 
+            this.engineersBindingSource.DataMember = "Engineers";
+            this.engineersBindingSource.DataSource = this.nPLabDataSet;
+            // 
+            // engineersTableAdapter
+            // 
+            this.engineersTableAdapter.ClearBeforeFill = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -637,6 +660,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Maximum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coefficient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nPLabDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.engineersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -689,6 +714,9 @@
         private System.Windows.Forms.ComboBox EngineerName;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox1;
+        private NPLabDataSet nPLabDataSet;
+        private System.Windows.Forms.BindingSource engineersBindingSource;
+        private NPLabDataSetTableAdapters.EngineersTableAdapter engineersTableAdapter;
 
     }
 }
